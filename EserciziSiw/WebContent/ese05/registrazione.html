@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registrazione</title>
+<link rel="stylesheet" type="text/css" href="css/miostile.css">
+</head>
+<body>
+	<h1>Benvenuti nella pagina di registrazione</h1>
+	<p style="color: blue;">
+		Inserendo i dati nel modulo sottostante potrai usufruire di servizi
+		eccezionali. <span class="importante">Cosa aspetti?</span> (se incontri difficoltà invia una email
+		all'indirizzo <a href="mailto:info@worldbooks.it">info@worldbooks.it</a>)
+	</p>
+	<h1>Modulo di registrazione</h1>
+
+	<form action="terzaPagina.html" method="get">
+		<table>
+			<tbody>
+				<tr>
+					<td class="title">Nome e cognome</td>
+					<td><input type="text" name="name"
+						placeholder="Nome e cognome" required="required"></td>
+				</tr>
+				<tr>
+					<td class="title">Sesso</td>
+					<td><input type="radio" name="gender" value="male"
+						checked="checked">M <input type="radio" name="gender"
+						value="female">F</td>
+
+				</tr>
+				<tr>
+					<td class="title">Hai ricevuto notizia di questo servizio tramite</td>
+					<td><input type="checkbox" name="knowing" value="internet">Internet
+						<input type="checkbox" name="knowing" value="newpapers">Giornali
+						<input type="checkbox" name="knowing" value="tv">TV</td>
+				</tr>
+				<tr>
+					<td class="title">Desideri ricevere un messaggio informativo ogni</td>
+					<td><select name="frequency" required="required">
+							<option value="name" hidden="hidden">- Frequenza -</option>
+							<option value="day">Ogni giorno</option>
+							<option value="week">Ogni settimana</option>
+							<option value="month">Ogni mese</option>
+							<option value="never">Mai</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td class="title">Eventuali commenti</td>
+					<td><textarea rows="5" cols="30" name="comments"
+							placeholder="Max 1000 caratteri" maxlength="1000"></textarea></td>
+				</tr>
+			</tbody>
+		</table>
+		<hr>
+		<input type="submit" value="Invia">
+	</form>
+</body>
+</html>
