@@ -3,8 +3,45 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="styles.css" title="general">
+
 </head>
 <body>
+	<form id="options" method="get" action="">
+		<table>
+			<tr>
+				<th></th>
+				<th>Dimensione</th>
+				<th>Colore</th>
+			</tr>
+			<tr>
+				<td>Seleziona i paramentri per i tag p:</td>
+				<td><input type="number" id="p_size" placeholder="12" min="1" max="50"></td>
+				<td><input type="color" id="p_color" value="#000000"></td>
+			</tr>
+
+			<tr>
+				<td>Seleziona i paramentri per il tag body:</td>
+				<td><input type="number" id="body_size" placeholder="12" min="1" max="50"></td>
+				<td><input type="color" id="body_color" value="#000000"></td>
+			</tr>
+			<tr>
+				<td>Seleziona i paramentri per i tag h1:</td>
+				<td><input type="number" id="h1_size" placeholder="12" min="1" max="50"></td>
+				<td><input type="color" id="h1_color" value="#000000"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><input type="submit" value="Invia"></td>
+			</tr>
+		</table>
+	</form>
+
+	<script type="text/javascript" src="javascript.js"></script>
+	<p>This is a paragraph!</p>
+	<h1>This is an h1</h1>
+	This is your body
 
 </body>
 </html>
