@@ -9,4 +9,30 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <servlet-name>Example</servlet-name>
+    <servlet-class>servlets.Example</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Example</servlet-name>
+    <url-pattern>/esServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ContactManager</servlet-name>
+    <servlet-class>servlets.ContactManager</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactManager</servlet-name>
+    <url-pattern>/cm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ContactManagerWithSession</servlet-name>
+    <servlet-class>servlets.ContactManagerWithSession</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactManagerWithSession</servlet-name>
+    <url-pattern>/cmws</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

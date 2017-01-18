@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rubrica con Servlet</title>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script src="javascript.js" type="text/javascript"></script>
+</head>
+<body>
+	<form action="../cm" method="post">
+		<table>
+			<thead id="thead">
+				<tr id="firstRow">
+					<th>FirstName</th>
+					<th>LastName</th>
+					<th>Phone</th>
+					<th>Email</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+				<tr id="lastRow">
+					<td><input name="name" placeholder="FirstName" /></td>
+					<td><input name="surname" placeholder="LastName" /></td>
+					<td><input name="phone" placeholder="Phone" /></td>
+					<td><input name="email" placeholder="Email" /></td>
+					<td><input name="add" type="submit" value="Add contact" /></td>
+					<td><button id="reset">Reset fields</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+	<form action="../cm" method="get">
+		<input type="submit" value="Mostra contatti" />
+	</form>
+	<button id="colorChangerBtn">Change color</button>
+	<br />
+	<a href="../index.html"><button>Index</button></a>
+</body>
+</html>
