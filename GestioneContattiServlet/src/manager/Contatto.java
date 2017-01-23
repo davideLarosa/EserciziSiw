@@ -7,6 +7,9 @@ public class Contatto {
 	private String phone;
 	private String email;
 
+	public Contatto() {
+	}
+
 	public Contatto(String name, String surname, String phone, String email) {
 		this.name = name;
 		this.surname = surname;

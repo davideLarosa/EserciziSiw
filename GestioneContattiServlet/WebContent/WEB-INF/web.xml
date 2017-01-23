@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>GestioneContattiServlet</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -10,14 +10,8 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <servlet-name>Example</servlet-name>
-    <servlet-class>servlets.Example</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Example</servlet-name>
-    <url-pattern>/esServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
+    <description></description>
+    <display-name>ContactManager</display-name>
     <servlet-name>ContactManager</servlet-name>
     <servlet-class>servlets.ContactManager</servlet-class>
   </servlet>
@@ -25,8 +19,19 @@
     <servlet-name>ContactManager</servlet-name>
     <url-pattern>/cm</url-pattern>
   </servlet-mapping>
-  
   <servlet>
+    <description></description>
+    <display-name>ContactManagerAjax</display-name>
+    <servlet-name>ContactManagerAjax</servlet-name>
+    <servlet-class>servlets.ContactManagerAjax</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactManagerAjax</servlet-name>
+    <url-pattern>/cmajax</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ContactManagerWithSession</display-name>
     <servlet-name>ContactManagerWithSession</servlet-name>
     <servlet-class>servlets.ContactManagerWithSession</servlet-class>
   </servlet>
@@ -34,5 +39,14 @@
     <servlet-name>ContactManagerWithSession</servlet-name>
     <url-pattern>/cmws</url-pattern>
   </servlet-mapping>
-  
+  <servlet>
+    <description></description>
+    <display-name>Example</display-name>
+    <servlet-name>Example</servlet-name>
+    <servlet-class>servlets.Example</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Example</servlet-name>
+    <url-pattern>/esServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
