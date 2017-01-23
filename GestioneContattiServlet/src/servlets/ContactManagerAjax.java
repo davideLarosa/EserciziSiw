@@ -21,8 +21,6 @@ public class ContactManagerAjax extends HttpServlet {
 
 	@Override
 	public void init() throws ServletException {
-		// TODO Auto-generated method stub
-		super.init();
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
